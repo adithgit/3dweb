@@ -2,9 +2,8 @@ import './App.css';
 import { Canvas } from '@react-three/fiber';
 import Animal from './Animal';
 import { OrbitControls } from '@react-three/drei';
-import { useEffect, useState } from 'react';
-
-
+import { useEffect, useState } from 'react'
+import Title from './Title';
 function App() {
   const [dimensions, setDimensions] = useState({
     width: window.innerWidth,
@@ -23,6 +22,8 @@ function App() {
 
   return (
       <div className='App'>
+    
+      <Title />
       <Canvas  className='canva' camera={{ fov: 115, zoom: (dimensions.width/dimensions.height) + 0.5, near: 1, far: 1000 }}  >
        <ambientLight intensity={0.5} />
         <Animal  scale={[0.1, 0.1, 0.1]}  position={[0, -1, 0]} />
