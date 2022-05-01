@@ -1,41 +1,34 @@
-import React, { useRef } from 'react';
 import './App.css';
-import { Canvas, useFrame } from '@react-three/fiber';
+import { Canvas } from '@react-three/fiber';
+import Animal from './Animal';
 import { OrbitControls } from '@react-three/drei';
-import { TextureLoader } from 'three';
-import texture from "./thandava.jpg"
-import { useLoader } from '@react-three/fiber';
+import { useEffect, useState } from 'react';
 
 
-const Box = () => {
-  const mesh = useRef(null);
-  useFrame(() => (mesh.current.rotation.y = mesh.current.rotation.y += 0.009 ))
-  return (
-    <mesh ref={mesh} >
-      <boxBufferGeometry attach='geometry' args={[1,1,1]}  />
-      <meshStandardMaterial  attach='material'  color={'white'} />
-    </mesh>
-  )
-}
 function App() {
-  return (
-    <>
-      <Canvas className='canva'  >
-        <ambientLight intensity={.3} />
-        <directionalLight position={[10, 10, 10]} intensity={1} />
-        <pointLight color={"green"} intensity={1.5} position={[-10, 0, -20]} />
-        <pointLight color={"yellow"} intensity={1.5} position={[10, 10, -20]} />
-        <Box />
+  const [dimensions, setDimensions] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+  const handleResize = () => {
+    
+    setDimensions({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+  }
+  useEffect(() => {
+    window.addEventListener("resize", handleResize, false);
+  },[]);
 
-        <group>
-          <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -3, 0]}>
-            <planeBufferGeometry attach={'geometry'} args={[100, 100, 100]} />
-            <meshBasicMaterial attach={'material'} color={"red"} />
-          </mesh>
-        </group>
-        <OrbitControls />
+  return (
+      <div className='App'>
+      <Canvas  className='canva' camera={{ fov: 115, zoom: (dimensions.width/dimensions.height) + 0.5, near: 1, far: 1000 }}  >
+       <ambientLight intensity={0.5} />
+        <Animal  scale={[0.1, 0.1, 0.1]}  position={[0, -1, 0]} />
+        <OrbitControls enableZoom={false} minPolarAngle = {Math.PI/2}  maxPolarAngle = {Math.PI/2} enablePan={false} />
       </Canvas>
-    </>
+      </div>
   );
 }
 
