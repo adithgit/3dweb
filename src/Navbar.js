@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import './Navbar.css'
 import { Tab, Tabs } from '@mui/material';
 import { LocalActivityRounded, HomeRounded, InfoRounded, ContactMailRounded } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
 

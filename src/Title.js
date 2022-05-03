@@ -4,9 +4,9 @@ function Title() {
   return (
     <div className='main-title'>
       <h1 class="glitch">
-        <span aria-hidden="true">THANDAVA 22</span>
-        THANDAVA 22
-        <span aria-hidden="true">THANDAVA 22</span>
+        <span aria-hidden="true">TITLE</span>
+        TITLE 
+        <span aria-hidden="true">TITLE</span>
       </h1>
     </div>
   )

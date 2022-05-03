@@ -1,13 +1,11 @@
-import './App.css';
+import './Home.css';
 import { Canvas } from '@react-three/fiber';
 import Animal from './Animal';
 import { OrbitControls } from '@react-three/drei';
 import { useEffect, useState } from 'react'
 import Title from './Title';
-import Navbar from './Navbar';
-import Fireflies from './Fireflies'
 
-function App() {
+function Home() {
   const [dimensions, setDimensions] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -25,9 +23,7 @@ function App() {
 
 
   return (
-    <div className='App'>
-      <Fireflies />
-      <Navbar />
+    <div className='home-div'>
       <Title />
       <Canvas className='canva' camera={{ fov: 115, zoom: (dimensions.width / dimensions.height) + 1.5, near: 1, far: 1000 }}  >
         <ambientLight intensity={0.5} />
@@ -38,4 +34,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

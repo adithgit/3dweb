@@ -70,7 +70,7 @@ const DEFAULT_SETTINGS = {
     color: "#0437F2",
     size: 2,
     speed: 0.1,
-    blur: 0,
+    blur: 1,
     count: 300,
     fadeSpeedRate: 0.01,
     differentSize: true,
