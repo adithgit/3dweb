@@ -9,6 +9,9 @@ function Main() {
     <>
     <Fireflies />
     <Navbar />
+
+    {/* Conditoinally rendered element */}
+    
     <Outlet />
     </>
   )
