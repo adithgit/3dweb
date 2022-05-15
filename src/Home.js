@@ -39,7 +39,7 @@ function Home() {
       <Canvas className='canva'camera={{ fov:60 }}>
         <Suspense fallback={<Loader />}>
         <Model />
-        <OrbitControls  autoRotate enableZoom={false} enablePan={false} minPolarAngle={Math.PI / 2.8} maxPolarAngle={Math.PI / 2.8}/>
+        <OrbitControls  autoRotate enableZoom={false} enablePan={false} minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2}/>
         <Environment preset='sunset' />
         </Suspense>
       </Canvas>
