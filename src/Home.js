@@ -15,17 +15,6 @@ function Home() {
     height: window.innerHeight,
   });
 
-  const handleResize = () => {
-    setDimensions({
-      width: window.innerWidth,
-      height: window.innerHeight,
-    });
-  }
-  useEffect(() => {
-    window.addEventListener("resize", handleResize, false);
-  }, []);
-
-
   function Loader() {
     const { progress } = useProgress()
     return <Html >
