@@ -21,7 +21,7 @@ function Home() {
     return <Html >
     <div className='loader' >
     <ReactLoading type='cylon' />
-    {progress}%
+    {Math.floor(progress)}%
     </div>
     </Html>
   }
