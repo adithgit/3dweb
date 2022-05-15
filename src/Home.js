@@ -1,12 +1,13 @@
 import './Home.css';
 import { Canvas } from '@react-three/fiber';
 import { Environment, OrbitControls } from '@react-three/drei';
-import { useEffect, useState , Suspense } from 'react'
+import { useRef, useState , Suspense } from 'react'
 import Title from './Title';
 import { Html, useProgress } from '@react-three/drei'
 import ReactLoading from 'react-loading';
 import { useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import { useFrame } from '@react-three/fiber';
 function Home() {
 
   
@@ -26,10 +27,16 @@ function Home() {
   }
 
   const Model = () => {
-    const gltf = useLoader(GLTFLoader, '/3dmodel.gltf');
+    const meshRef = useRef();
+    const gltf = useLoader(GLTFLoader, '/thandava22.gltf');
+    useFrame(()=>{
+      meshRef.current.rotation.y += 0.03;
+    })
     return(
       <>
+        <mesh ref={ meshRef }>
         <primitive object={ gltf.scene } scale={25} position={[0, -1, 0]} />
+        </mesh>
       </>
     ) 
   }
@@ -39,7 +46,7 @@ function Home() {
       <Canvas className='canva'camera={{ fov:dimensions.width>1000?65:70 }}>
         <Suspense fallback={<Loader />}>
         <Model />
-        <OrbitControls  autoRotate enableZoom={false} enablePan={false} minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2}/>
+        <OrbitControls  enableZoom={false} enablePan={false} minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2}/>
         <Environment preset='sunset' />
         </Suspense>
       </Canvas>
