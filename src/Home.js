@@ -1,15 +1,15 @@
 import './Home.css';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
+import { Environment, OrbitControls } from '@react-three/drei';
 import { useEffect, useState , Suspense } from 'react'
 import Title from './Title';
-import Logo1 from './Logo1'
 import { Html, useProgress } from '@react-three/drei'
 import ReactLoading from 'react-loading';
-
-
+import { useLoader } from '@react-three/fiber'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 function Home() {
 
+  
   const [dimensions, setDimensions] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -25,14 +25,22 @@ function Home() {
     </Html>
   }
 
+  const Model = () => {
+    const gltf = useLoader(GLTFLoader, '/3dmodel.gltf');
+    return(
+      <>
+        <primitive object={ gltf.scene } scale={25} position={[0, -1, 0]} />
+      </>
+    ) 
+  }
   return (
     <div className='home-div'>
       <Title />
-      <Canvas className='canva' camera={{ fov: 115, zoom: (dimensions.width / dimensions.height) + 1.5, near: 1, far: 1000 }}  >
+      <Canvas className='canva'camera={{ fov:60 }}>
         <Suspense fallback={<Loader />}>
-          <ambientLight intensity={0.5} />
-          <Logo1 scale={window.innerHeight > 800 ? [0.02, 0.02, 0.02] : [0.03, 0.03, 0.03]} position={[0, -0.5, 0]} />
-          <OrbitControls enableZoom={false} minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2} enablePan={false} />
+        <Model />
+        <OrbitControls  autoRotate enableZoom={false} enablePan={false} minPolarAngle={Math.PI / 2.8} maxPolarAngle={Math.PI / 2.8}/>
+        <Environment preset='sunset' />
         </Suspense>
       </Canvas>
     </div>
