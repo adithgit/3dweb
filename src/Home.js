@@ -36,7 +36,7 @@ function Home() {
   return (
     <div className='home-div'>
       <Title />
-      <Canvas className='canva'camera={{ fov:dimensions.innerWidth>1000?60:75 }}>
+      <Canvas className='canva'camera={{ fov:dimensions.width>1000?65:70 }}>
         <Suspense fallback={<Loader />}>
         <Model />
         <OrbitControls  autoRotate enableZoom={false} enablePan={false} minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2}/>
