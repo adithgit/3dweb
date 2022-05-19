@@ -7,7 +7,7 @@ function Events() {
   let rules = [];
   const eventDetails = [{
     title: 'Recreating Frames',
-    description:'Enact a scene from any malayalam movie.',
+    description:'The competiton is as the name suggest to renact and capture a scene/frame from any movie with a twist of your own i.e the way you would have done the scene in the first place.',
     formLink: 'https://forms.gle/jCqH7DaR8BBWjUU26',
     posterLink: '/recreate-frames.jpg',
     rules:[
@@ -23,7 +23,7 @@ function Events() {
     ]
   }, {
     title: '1 Min Short Film',
-    description:'Short film competition with a maximum duration of only one minute.',
+    description:'The competition is open to anyone  but there is ONE simple rule: your film MUST be 60 seconds or less in duration. The duration of your film(s) must not exceed 60 seconds including titles and credits.',
     formLink: 'https://forms.gle/nLWtM2tskToQUT8M6',
     posterLink: '/short-film.jpg',
     rules:[
@@ -40,54 +40,54 @@ function Events() {
   {
     title: 'Editography',
     formLink: 'https://forms.gle/NkWNNV9MS4pnaAv17',
-    posterLink: '/logo.jpg',
+    posterLink: '/more-events.jpg',
     label:"coming-soon",
     rules
   }, {
     title: 'Photography',
     formLink: 'https://forms.gle/4GCyp1dbxUyNtR7c9',
-    posterLink: '/logo.jpg',
+    posterLink: '/more-events.jpg',
     label:"coming-soon",
     rules
   }, {
     title: 'Reels - act it out',
     formLink: 'https://forms.gle/zme9VPZR3w6ZZAzn6',
-    posterLink: '/logo.jpg',
+    posterLink: '/more-events.jpg',
     label:"coming-soon"
   }, {
     title: 'Mr Beard',
     formLink: 'https://forms.gle/Bykk39Luk564eGX27',
-    posterLink: '/logo.jpg',
+    posterLink: '/more-events.jpg',
     label:"coming-soon",
     rules
   }, {
     title: 'Miss Smile',
     formLink: 'https://forms.gle/F3L9cjN5toBXN4F49',
-    posterLink: '/logo.jpg',
+    posterLink: '/more-events.jpg',
     label:"coming-soon",
     rules
   }, {
     title: 'Troll Master',
     formLink: 'https://forms.gle/wjBevdWg2AVP79pz8',
-    posterLink: '/logo.jpg',
+    posterLink: '/more-events.jpg',
     label:"coming-soon",
     rules
   }, {
     title: 'Troll Video',
     formLink: 'https://forms.gle/fCkEie4dLQcKwxoT6',
-    posterLink: '/logo.jpg',
+    posterLink: '/more-events.jpg',
     label:"coming-soon",
     rules
   }, {
     title: 'Selfie Contest',
     formLink: 'https://forms.gle/f9LN9tiDoAwfGAtp8',
-    posterLink: '/logo.jpg',
+    posterLink: '/more-events.jpg',
     label:"coming-soon",
     rules
   }, {
     title: 'Duo Dance',
     formLink: 'https://forms.gle/aZBpjKW7RFrnP7Xx7',
-    posterLink: '/logo.jpg',
+    posterLink: '/more-events.jpg',
     label:"coming-soon",
     rules
   },];

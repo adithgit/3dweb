@@ -22,7 +22,9 @@ function Event({  background, eventDetails }) {
       >
 
       {
-        eventDetails.label ? <h3 className='event-label'>{eventDetails.label}</h3> : 
+        eventDetails.label ? <motion.button whileHover={{ scale: 1.1 }}   whileTap={{ scale:0.9 }}  id='event-button'  >
+             Coming Soon
+        </motion.button>: 
         <motion.button whileHover={{ scale: 1.1 }}   whileTap={{ scale:0.9 }}  id='event-button' onClick={ toggleModal } >
              REGISTER
         </motion.button>

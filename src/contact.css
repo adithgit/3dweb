@@ -2,4 +2,11 @@
     padding-top: 7rem;
     margin: auto;
     text-align: center;
+    font-size: large;
+}
+
+@media (max-width:1000px) {
+    .contact{
+        font-size: medium !important;
+    }
 }

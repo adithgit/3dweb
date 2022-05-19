@@ -3,9 +3,9 @@ import './contact.css'
 function Contact() {
     return (
         <div className='contact'>
-           <h3>Akshay </h3>
-           <h3>Ephrem</h3>
-           <h3>Jacob</h3>
+           <p>Akshaya Krishna - Mob:  7561065481</p>
+           <p>Ephrem Varkey Oommen - Mob: 7994985785</p>
+           <p>Jacob Suresh - Mob : 9497722928 </p>
         </div>
     )
 }
