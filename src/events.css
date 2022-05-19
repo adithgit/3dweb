@@ -12,7 +12,6 @@
 
 .container {
     width: 25%;
-    max-height: 25%;
     margin-inline: 1rem;
     display: flex;
     align-items: center;
@@ -34,12 +33,14 @@
 }
 
 #event-button {
-    background-color: inherit;
     border-radius: 10px;
-    border: 1px solid rgb(113, 113, 248);
+    border: 1px solid rgb(103, 103, 243);
     padding: 1rem;
+    font-weight: bold;
+    font-family: sans-serif !important;
     font-size: medium;
-    color: white;
+    background-color: rgb(0, 140, 255);
+    color: rgb(255, 255, 255);
     display: none;
 }
 

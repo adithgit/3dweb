@@ -45,6 +45,7 @@ function Home() {
       <Title />
       <Canvas className='canva'camera={{ fov:dimensions.width>1000?65:70 }}>
         <Suspense fallback={<Loader />}>
+        <ambientLight intensity={1}/>
         <Model />
         <OrbitControls  enableZoom={false} enablePan={false} minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2}/>
         <Environment preset='sunset' />

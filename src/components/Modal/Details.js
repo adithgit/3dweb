@@ -6,24 +6,18 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Button } from '@mui/material';
 
-function Details() {
+function Details({ eventDetails }) {
     return (
         <div className='event-details'>
         <div>
-            <h3>Event Name</h3>
+            <h3>{ eventDetails.title }</h3>
         </div>
         <div className='width80'>
             <h4>
                 Description
             </h4>
             <label >
-            Participants should report at the workshop session before 10 mins of the scheduled time
-- Participants will be eligible for certificate only if they are present for the whole session
- - Any inappropriate behaviour during the session will not be entertained
-- Everyone should turn on camera
-- Registration fes is INR 499
-- Fill in the necessary details as shown in the form below and complete the payment
-- All decisions taken by the committee will be final
+            { eventDetails.description}
             </label>
         </div>
             <div className="width80">
@@ -38,24 +32,15 @@ function Details() {
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                    1.sdfsdf
-                    <br />
-                    2.sdfsdfsdf
-                    <br />
-                    1.sdfofn sdfi dfiodjsiof hdsiofh dsoifhsfoisdfhdsoifhsf oisdfhoisdf hsdoifhdsoif doisdh fiosf soifs
-                    <br />
-                    2.sdfsdfsdf
-                    <br />
-                    1.sdfsdf
-                    <br />
-                    2.sdfsdsfdnskfnfj fldsf sdiofhsf oisdhfoids fdsfh siofh sfodsih fodsif hfoidshfiosddfsdf
-                    <br />
+                    {
+                        eventDetails.rules.map((rule)=> <div>{rule}</div>)
+                    }
                     </Typography>
                 </AccordionDetails>
             </Accordion>
             </div>
             <div id="submit-button">
-            <Button variant="outlined">Submit Entry</Button>
+            <Button href={ eventDetails.formLink } target={'_blank'}  variant="outlined">Submit Entry</Button>
             </div>
             
         </div>

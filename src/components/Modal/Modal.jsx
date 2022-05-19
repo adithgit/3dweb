@@ -4,7 +4,7 @@ import Backdrop from '../Backdrop/Backdrop'
 import Details from './Details'
 import { Button } from '@mui/material'
 import '../../events.css'
-function Modal({ handleClose, text }) {
+function Modal({ handleClose, text, eventDetails }) {
 
     const dropIn = {
         hidden: {
@@ -43,9 +43,9 @@ function Modal({ handleClose, text }) {
                     X
                 </Button>
                 <div className="event-poster">
-                    <img src="https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/9qWx-1.png" alt="" />
+                    <img src={ eventDetails.posterLink } alt="" />
                 </div>
-                <Details />
+                <Details eventDetails = { eventDetails } />
             </motion.div>
         </div>
     )

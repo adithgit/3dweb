@@ -3,8 +3,9 @@ import { useSpring, useSprings, animated, interpolate } from 'react-spring'
 import "./events.css"
 import { motion, AnimatePresence } from 'framer-motion'
 import Modal from './components/Modal/Modal';
+import { FilledInput } from '@mui/material';
 
-function Event({ image, background, label }) {
+function Event({  background, eventDetails }) {
     const [modalOpen, setModelOpen ] = useState(null);
 
     const toggleModal = () => setModelOpen(!modalOpen);
@@ -21,14 +22,12 @@ function Event({ image, background, label }) {
       >
 
       {
-        label ? <h3 className='event-label'>{label}</h3> : 
-        <motion.button whileHover={{ scale: 1.1 }}  whileTap={{ scale:0.9 }}  id='event-button' onClick={ toggleModal } >
+        eventDetails.label ? <h3 className='event-label'>{eventDetails.label}</h3> : 
+        <motion.button whileHover={{ scale: 1.1 }}   whileTap={{ scale:0.9 }}  id='event-button' onClick={ toggleModal } >
              REGISTER
         </motion.button>
       }
-
-
-      { modalOpen && <Modal modalOpen={modalOpen} handleClose={toggleModal} />}
+      { modalOpen && <Modal modalOpen={ modalOpen } handleClose={toggleModal} eventDetails = { eventDetails } />}
 
       </AnimatePresence>
 
@@ -42,7 +41,7 @@ function Event({ image, background, label }) {
               (z, f, r) => `translate3d(0,0,${z}px) rotateX(${f * r}deg)`
             )
           }}>
-          {index === 4 && <animated.img style={{ transform: f.interpolate([0, 1], ['scale(0.7)', 'scale(1)']) }} src={image} />}
+          {index === 4 && <animated.img style={{ width:'100%', transform: f.interpolate([0, 1], ['scale(0.7)', 'scale(1)']) }} src={ eventDetails.posterLink } />}
         </animated.div>
       ))}
     </div>
