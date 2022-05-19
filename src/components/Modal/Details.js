@@ -20,7 +20,7 @@ function Details({ eventDetails }) {
             { eventDetails.description}
             </label>
         </div>
-            <div className="width80">
+            <div className="width80 overflow-scroll">
             <Accordion >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
