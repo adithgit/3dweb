@@ -36,7 +36,20 @@ function Events() {
       '7. Entry should be sent with full name, class and instagram id.',
       '8. Upload entry by clicking the button below.'
     ]
-  },
+  }, {
+    title: 'Troll Master',
+    formLink: 'https://forms.gle/wjBevdWg2AVP79pz8',
+    posterLink: '/troll-master.jpg',
+    description:'We are announcing an online Troll contest to bring the best trolls. If you are someone with a creative mind with a sense of seeing things on its lighter side, this is an opportunity for you to win prizes',
+    rules:[
+      '1. Troll should be purely topic based.',
+      '2. Poster trolls are only allowed. Video trolls are not allowed.',
+      "3. Personal trolls or others that are offensie wont't be appreciated",
+      '4. Winners are chosen based on creativity and number of likes respectively',
+      '5. Entry should be sent with full name, class and instagram id.',
+      '6. Judges decision will be final.'
+    ]
+  }, 
   {
     title: 'Editography',
     formLink: 'https://forms.gle/NkWNNV9MS4pnaAv17',
@@ -66,13 +79,8 @@ function Events() {
     posterLink: '/more-events.jpg',
     label:"coming-soon",
     rules
-  }, {
-    title: 'Troll Master',
-    formLink: 'https://forms.gle/wjBevdWg2AVP79pz8',
-    posterLink: '/more-events.jpg',
-    label:"coming-soon",
-    rules
-  }, {
+  },
+  {
     title: 'Troll Video',
     formLink: 'https://forms.gle/fCkEie4dLQcKwxoT6',
     posterLink: '/more-events.jpg',
