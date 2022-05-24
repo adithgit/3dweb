@@ -76,7 +76,46 @@ function Events() {
       '5. Entry should be sent with full name, class and instagram id.',
       '6. Judges decision will be final.'
     ]
+  },{
+    title: 'Duo Dance',
+    formLink: 'https://forms.gle/aZBpjKW7RFrnP7Xx7',
+    posterLink: '/duo-dance.jpg',
+    rules:[
+      '1. Video should not exceed 50 seconds.',
+      '2. No transitions or effects are permitted.',
+      '3. Entries violating rules shall be disqualified',
+      '4. Entry should be sent with full name, class and instagram id.',
+      '5. Judges decision will be final.'
+    ]
   },
+  {
+    title: 'Miss Smile',
+    formLink: 'https://forms.gle/F3L9cjN5toBXN4F49',
+    posterLink: '/miss-smile.jpg',
+    rules:[
+      '1. Portrait or candid photos are only accepted.',
+      '2. Edited or filtered photos are not allowed.',
+      '3. U[load entries by clicking button below.',
+      '4. Winners are chosen based on creativity and number of likes respectively',
+      '5. Entry should be sent with full name, class and instagram id.',
+      '6. Judges decision will be final.'
+    ]
+  },
+  {
+    title: 'Troll Video',
+    formLink: 'https://forms.gle/fCkEie4dLQcKwxoT6',
+    posterLink: '/troll-video.jpg',
+    rules:[
+      '1. Troll should be topic based.',
+      '2. Video trolls are only allowed. Poster trolls are not allowed.',
+      '3. Personal trolls or offensive trolls are not allowed.',
+      '4. The event is conducted for entertainment purpose only.',
+      '5. Winners are chosen based on creativity and number of likes respectively',
+      '6. Entry should be sent with full name, class and instagram id.',
+      '7. Judges decision will be final.'
+
+    ]
+  }, 
   {
     title: 'Photography',
     formLink: 'https://forms.gle/4GCyp1dbxUyNtR7c9',
@@ -88,29 +127,9 @@ function Events() {
     formLink: 'https://forms.gle/zme9VPZR3w6ZZAzn6',
     posterLink: '/more-events.jpg',
     label: "coming-soon"
-  },
-  {
-    title: 'Miss Smile',
-    formLink: 'https://forms.gle/F3L9cjN5toBXN4F49',
-    posterLink: '/more-events.jpg',
-    label: "coming-soon",
-    rules
-  },
-  {
-    title: 'Troll Video',
-    formLink: 'https://forms.gle/fCkEie4dLQcKwxoT6',
-    posterLink: '/more-events.jpg',
-    label: "coming-soon",
-    rules
-  }, {
+  },{
     title: 'Selfie Contest',
     formLink: 'https://forms.gle/f9LN9tiDoAwfGAtp8',
-    posterLink: '/more-events.jpg',
-    label: "coming-soon",
-    rules
-  }, {
-    title: 'Duo Dance',
-    formLink: 'https://forms.gle/aZBpjKW7RFrnP7Xx7',
     posterLink: '/more-events.jpg',
     label: "coming-soon",
     rules

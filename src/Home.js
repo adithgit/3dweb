@@ -30,7 +30,7 @@ function Home() {
     const meshRef = useRef();
     const gltf = useLoader(GLTFLoader, '/thandava22.gltf');
     useFrame(()=>{
-      meshRef.current.rotation.y += 0.03;
+      meshRef.current.rotation.y += 0.01;
     })
     return(
       <>
