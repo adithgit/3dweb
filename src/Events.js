@@ -4,7 +4,6 @@ import Event from './Event'
 
 
 function Events() {
-  let rules = [];
   const eventDetails = [{
     title: 'Recreating Frames',
     description: 'The competiton is as the name suggest to renact and capture a scene/frame from any movie with a twist of your own i.e the way you would have done the scene in the first place.',
@@ -119,20 +118,38 @@ function Events() {
   {
     title: 'Photography',
     formLink: 'https://forms.gle/4GCyp1dbxUyNtR7c9',
-    posterLink: '/more-events.jpg',
-    label: "coming-soon",
-    rules
+    posterLink: '/photography.jpg',
+    rules:[
+      '1. Portrait or candid photos are only allowed.',
+      '2. Edited or filtered photos are not allowed.',
+      '3. Any  entries against this will be disqualified.',
+      '4. Entry should be sent with full name, class and instagram id.',
+      '5. Judges decision will be final.'
+    ]
   }, {
     title: 'Reels - act it out',
     formLink: 'https://forms.gle/zme9VPZR3w6ZZAzn6',
-    posterLink: '/more-events.jpg',
-    label: "coming-soon"
+    posterLink: '/reels.jpg',
+    rules:[
+      '1. Group reels are not encouraged.',
+      '2. Any transitions or effects that are available in reels itself are permitted.',
+      '3. Any  entries against this will be disqualified.',
+      '4. Entry should be sent with full name, class and instagram id.',
+      '5. Judges decision will be final.',
+      '6. Click the button below to upload your entry.'
+    ]
   },{
     title: 'Selfie Contest',
     formLink: 'https://forms.gle/f9LN9tiDoAwfGAtp8',
-    posterLink: '/more-events.jpg',
-    label: "coming-soon",
-    rules
+    posterLink: '/selfie-contest.jpg',
+    rules:[
+      '1. Individual selfies are only permitted.',
+      '2. Edited or filtered photos are not allowed.',
+      '3. Any  entries against this will be disqualified.',
+      '4. Winners are chosen based on creativity and number of likes respectively',
+      '5. Entry should be sent with full name, class and instagram id.',
+      '6. Judges decision will be final.'
+    ]
   },];
   return (
     <div className='events-div'>
