@@ -64,7 +64,7 @@ function Events() {
     ]
   }, {
     title: 'Mr Beard',
-    formLink: 'https://forms.gle/Bykk39Luk564eGX27',
+    formLink: 'https://form.jotform.com/221462745342453',
     posterLink: '/mr-beard.jpg',
     description:'An opportunity to showcase your beard and win exciting prizes.',
     rules:[
