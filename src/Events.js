@@ -19,7 +19,8 @@ function Events() {
       '7. Entry shall be submitted on or before 4th june 2022.',
       '8. Entry should be sent with full name, class and instagram id.',
       '9. Upload entry by clicking the button below.'
-    ]
+    ],
+    label:"Closed"
   }, {
     title: '1 Min Short Film',
     description: 'The competition is open to anyone  but there is ONE simple rule: your film MUST be 60 seconds or less in duration. The duration of your film(s) must not exceed 60 seconds including titles and credits.',
@@ -34,7 +35,8 @@ function Events() {
       '6. Entry shall be submitted on or before 4th june 2022.',
       '7. Entry should be sent with full name, class and instagram id.',
       '8. Upload entry by clicking the button below.'
-    ]
+    ],
+    label:"Closed"
   }, {
     title: 'Troll Master',
     formLink: 'https://forms.gle/wjBevdWg2AVP79pz8',
@@ -47,7 +49,8 @@ function Events() {
       '4. Winners are chosen based on creativity and number of likes respectively',
       '5. Entry should be sent with full name, class and instagram id.',
       '6. Judges decision will be final.'
-    ]
+    ],
+    label:"Closed"
   },
   {
     title: 'Editography',
@@ -61,7 +64,8 @@ function Events() {
       '4. Winners are chosen based on creativity and number of likes respectively',
       '5. Entry should be sent with full name, class and instagram id.',
       '6. Judges decision will be final.'
-    ]
+    ],
+    label:"Closed"
   }, {
     title: 'Mr Beard',
     formLink: 'https://form.jotform.com/221462745342453',
@@ -74,7 +78,8 @@ function Events() {
       '4. Winners are chosen based on creativity and number of likes respectively',
       '5. Entry should be sent with full name, class and instagram id.',
       '6. Judges decision will be final.'
-    ]
+    ],
+    label:"Closed"
   },{
     title: 'Duo Dance',
     formLink: 'https://forms.gle/aZBpjKW7RFrnP7Xx7',
@@ -85,7 +90,8 @@ function Events() {
       '3. Entries violating rules shall be disqualified',
       '4. Entry should be sent with full name, class and instagram id.',
       '5. Judges decision will be final.'
-    ]
+    ],
+    label:"Closed"
   },
   {
     title: 'Miss Smile',
@@ -98,7 +104,8 @@ function Events() {
       '4. Winners are chosen based on creativity and number of likes respectively',
       '5. Entry should be sent with full name, class and instagram id.',
       '6. Judges decision will be final.'
-    ]
+    ],
+    label:"Closed"
   },
   {
     title: 'Troll Video',
@@ -113,7 +120,8 @@ function Events() {
       '6. Entry should be sent with full name, class and instagram id.',
       '7. Judges decision will be final.'
 
-    ]
+    ],
+    label:"Closed"
   }, 
   {
     title: 'Photography',
@@ -125,7 +133,8 @@ function Events() {
       '3. Any  entries against this will be disqualified.',
       '4. Entry should be sent with full name, class and instagram id.',
       '5. Judges decision will be final.'
-    ]
+    ],
+    label:"Closed"
   }, {
     title: 'Reels - act it out',
     formLink: 'https://forms.gle/zme9VPZR3w6ZZAzn6',
@@ -137,7 +146,8 @@ function Events() {
       '4. Entry should be sent with full name, class and instagram id.',
       '5. Judges decision will be final.',
       '6. Click the button below to upload your entry.'
-    ]
+    ],
+    label:"Closed"
   },{
     title: 'Selfie Contest',
     formLink: 'https://forms.gle/f9LN9tiDoAwfGAtp8',
@@ -149,7 +159,8 @@ function Events() {
       '4. Winners are chosen based on creativity and number of likes respectively',
       '5. Entry should be sent with full name, class and instagram id.',
       '6. Judges decision will be final.'
-    ]
+    ],
+    label:"Closed"
   },];
   return (
     <div className='events-div'>

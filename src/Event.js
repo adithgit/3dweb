@@ -23,7 +23,7 @@ function Event({  background, eventDetails }) {
 
       {
         eventDetails.label ? <motion.button whileHover={{ scale: 1.1 }}   whileTap={{ scale:0.9 }}  id='event-button'  >
-             Coming Soon
+             {eventDetails.label}
         </motion.button>: 
         <motion.button whileHover={{ scale: 1.1 }}   whileTap={{ scale:0.9 }}  id='event-button' onClick={ toggleModal } >
              REGISTER
