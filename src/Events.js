@@ -20,7 +20,6 @@ function Events() {
       '8. Entry should be sent with full name, class and instagram id.',
       '9. Upload entry by clicking the button below.'
     ],
-    label:"Closed"
   }, {
     title: '1 Min Short Film',
     description: 'The competition is open to anyone  but there is ONE simple rule: your film MUST be 60 seconds or less in duration. The duration of your film(s) must not exceed 60 seconds including titles and credits.',
